@@ -1,0 +1,7 @@
+py-cord
+pymongo
+pymongo[srv]
+pygtrie
+pyimgur
+
+Pillow==9.0.1
