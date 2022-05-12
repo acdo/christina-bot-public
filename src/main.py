@@ -9,11 +9,14 @@ from discord.ext.pages import Paginator
 import mongo_calls
 from bot_helpers import *
 from cross_package_helpers import *
-from tokens import DISCORD_TOKEN, GUILD_IDS
+from tokens import DISCORD_TOKEN, GUILD_IDS, GUILD_TEST_IDS
 
 # INITIALIZE
 logging.basicConfig(level=logging.INFO)
-christina_bot = discord.Bot()
+intents = discord.Intents.default()
+intents.message_content = True
+christina_bot = discord.Bot(intents=intents)
+
 
 
 # BOT COMMANDS (must be set up before running bot)
@@ -75,7 +78,7 @@ async def add_ba_counter(
     attach_prompt = await ctx.respond('Please attach the image of the counter comp in your next message.')
     await append_interactions(msgs_to_delete, [ctx.interaction, attach_prompt])
     try:
-        comp_to_add = await christina_bot.wait_for('message', check=check_function_factory(author, UserEmbedCommand.ADD,
+        comp_to_add: discord.InteractionMessage = await christina_bot.wait_for('message', check=check_function_factory(author, UserEmbedCommand.ADD,
                                                                                            msgs_to_delete), timeout=60)
         await append_interactions(msgs_to_delete, [comp_to_add])
         img_url = get_image_url(comp_to_add)
@@ -140,7 +143,6 @@ async def get_ba_counters(
             await append_interactions(msgs_to_delete, [time_out])
             await delete_counter_messages(ctx, msgs_to_delete, False)
             done = True
-
 
 # RUN BOT
 christina_bot.run(DISCORD_TOKEN)

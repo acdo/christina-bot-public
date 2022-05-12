@@ -28,7 +28,7 @@ DESC_ALIASES = "All supported aliases for units with multiple valid names (e.g. 
 ALIAS_KYARU = ['kyaru', 'karyl']
 ALIAS_SKYARU = ['skyaru', 'skaryl', 'summerkyaru', 'summerkaryl']
 ALIAS_STAMAKI = ['stamaki', 'summertamaki', 'stama']
-ALIAS_HSHINOBU = ['hshinobu', 'halloweenshinobu']
+ALIAS_HSHINOBU = ['hshinobu', 'halloweenshinobu', 'hshin']
 ALIAS_LIMA = ['lima', 'rima']
 ALIAS_VERIKO = ['veriko', 'valentineeriko']
 ALIAS_KYOUKA = ['kyouka', 'kyoka']
@@ -36,7 +36,7 @@ ALIAS_NYREI = ['nyrei', 'newyearrei']
 ALIAS_XAYANE = ['xayane', 'holidayayane', 'christmasayane']
 ALIAS_PECORINE = ['pecorine', 'peco']
 ALIAS_SUMMERPECORINE = ['specorine', 'speco', 'summerpeco', 'summerpecorine']
-ALIAS_SKOKKORO = ['skokkoro', 'summerkokkoro', 'skoko', 'summerkoko']
+ALIAS_SKOKKORO = ['skokkoro', 'summerkokkoro', 'skoko', 'summerkoko', 'skk']
 ALIAS_MIYAKO = ['miyako', 'pudding']
 ALIAS_HMIYAKO = ['hmiyako', 'halloweenmiyako', 'hpudding', 'halloweenpudding']
 ALIAS_NYYUI = ['nyyui', 'newyearyui', 'newyearsyui', 'nyui']
@@ -51,6 +51,20 @@ ALIAS_HMISAKI = ['hmisaki', 'halloweenmisaki']
 ALIAS_ILLYA = ['illya', 'ilya']
 ALIAS_KUUKA = ['kuuka', 'kuka', 'kukka']
 ALIAS_CHRISTINA = ['christina', 'chris']
+ALIAS_TSUMUGI = ['tsumugi', 'mugi']
+ALIAS_OKUUKA = ['ooedokuuka', 'okuuka', 'ooedokuka', 'okuka', 'ooedokukka', 'okukka']
+ALIAS_ONINON = ['ooedoninon', 'oninon']
+ALIAS_SSUZUNA = ['summersuzuna', 'ssuzuna']
+ALIAS_SSAREN = ['summersaren', 'ssaren']
+ALIAS_SMAKOTO = ['summermakoto', 'smakoto']
+ALIAS_SIO = ['summerio', 'sio']
+ALIAS_SKAORI = ['summerkaori', 'skaori']
+ALIAS_SMAHO = ['summermaho', 'smaho']
+ALIAS_TAOI = ['transferstudentaoi', 'transferaoi', 'taoi']
+ALIAS_HKYOUKA = ['halloweenkyouka', 'hkyouka', 'halloweenkyoka', 'hkyoka']
+ALIAS_HMIMI = ['halloweenmimi', 'hmimi']
+ALIAS_HCHRISTINA = ['christmaschristina', 'holidaychristina', 'xchris', 'xtina', 'xchristina']
+ALIAS_XILLYA = ['christmasillya', 'holidayillya', 'xillya', 'christmasilya', 'holidayilya', 'xilya']
 
 ALIASES = [ALIAS_HIYORI,
            ALIAS_HMISAKI,
@@ -77,11 +91,25 @@ ALIASES = [ALIAS_HIYORI,
            ALIAS_XAYANE,
            ALIAS_XCHIKA,
            ALIAS_XKURUMI,
-           ALIAS_CHRISTINA]
+           ALIAS_CHRISTINA,
+           ALIAS_TSUMUGI,
+           ALIAS_OKUUKA,
+           ALIAS_ONINON,
+           ALIAS_SSUZUNA,
+           ALIAS_SSAREN,
+           ALIAS_SMAKOTO,
+           ALIAS_SIO,
+           ALIAS_SKAORI,
+           ALIAS_SMAHO,
+           ALIAS_TAOI,
+           ALIAS_HKYOUKA,
+           ALIAS_HMIMI,
+           ALIAS_HCHRISTINA,
+           ALIAS_XILLYA]
 
 
 # LIST OF ALL OTHER CHARACTERS
-REMAINING_CHARACTERS = ['yui', 'rei', 'shizuru', 'rino', 'nozomi', 'chika', 'tsumugi', 'mimi', 'misato', 'aoi',
+REMAINING_CHARACTERS = ['yui', 'rei', 'shizuru', 'rino', 'nozomi', 'chika', 'mimi', 'misato', 'aoi',
                         'shinobu',
                         'yori', 'akari', 'jun', 'tomo', 'matsuri', 'saren', 'suzume', 'ayane', 'kurumi',
                         'maho', 'makoto', 'kaori', 'kasumi', 'mahiru', 'rin', 'shiori', 'akino', 'yukari', 'mifuyu',
